@@ -1,0 +1,17 @@
+{
+    "name": "org.nuget.ssh.net",
+    "version": "2024.1.0",
+    "displayName": "SSH.NET",
+    "description": "SSH.NET is a Secure Shell (SSH) library for .NET, optimized for parallelism.",
+    "unity": "2018.3",
+    "keywords": [
+        "ssh",
+        "scp",
+        "sftp"
+    ],
+    "author": {
+        "name": "Renci",
+        "email": "",
+        "url": ""
+    }
+}
