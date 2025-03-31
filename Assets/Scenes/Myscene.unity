@@ -3059,9 +3059,10 @@ MonoBehaviour:
   host: 10.201.208.55
   port: 22
   username: albin
-  password: 
-  privateKeyPath: C:/Users/goa7/.ssh/id_rsa
+  passwordPath: 
+  privateKeyPath: C:\Users\goa7\.ssh\id_rsa
   serverDirectory: /home/albin/Documents/InstantMesh
+  dockerName: 
 --- !u!4 &1741930246
 Transform:
   m_ObjectHideFlags: 0

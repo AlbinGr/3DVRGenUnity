@@ -12,6 +12,17 @@ public class SshServer : MonoBehaviour
         serverParams = GetComponent<ServerParams>();
         sshClient = new SshClient(serverParams.connectionInfo);
         sshClient.Connect();
+        if (serverParams.dockerName != "");
+        {
+            // Start the docker container
+            using (var client = new SshClient(serverParams.connectionInfo))
+            {
+                client.Connect();
+                var cmd = client.RunCommand("sudo docker-start.sh " + serverParams.dockerName);
+                UnityEngine.Debug.Log(cmd.Result);
+                client.Disconnect();
+            }
+        }
     }
 
     // Update is called once per frame
